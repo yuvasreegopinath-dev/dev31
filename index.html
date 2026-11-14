@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#080713" />
+    <meta name="description" content="DEV31 — a Hollywood-style love game made for Dev's 31st birthday." />
+    <title>DEV31 — The Game of Love</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Orbitron:wght@400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="app">
+      <canvas id="starfield" aria-hidden="true"></canvas>
+      <div class="scanlines" aria-hidden="true"></div>
+      <div class="grain" aria-hidden="true"></div>
+
+      <div class="start-screen" id="start-screen" role="dialog" aria-modal="true" aria-labelledby="start-title">
+        <div class="start-frame">
+          <div class="film-holes"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          <p class="studio-line">A SREEDEV PICTURES ORIGINAL</p>
+          <div class="clapper" aria-hidden="true"><span>✦ &nbsp; LOVE &nbsp; ACTION &nbsp; ✦</span></div>
+          <p class="start-kicker">ONE LOVE · EIGHT YEARS · INFINITE LIVES</p>
+          <h1 id="start-title">DEV<span>31</span></h1>
+          <p class="start-subtitle">THE GAME OF LOVE</p>
+          <p class="start-copy">PLAYER 01: DEV &nbsp; / &nbsp; PLAYER 02: SREE</p>
+          <button class="start-button" id="start-game" type="button"><span>▶</span> PRESS START</button>
+          <p class="start-hint">BEST EXPERIENCED WITH SOUND ON</p>
+          <div class="film-holes bottom"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        </div>
+      </div>
+
+      <header class="topbar">
+        <a class="brand" href="#home">DEV<span>31</span></a>
+        <div class="topbar-center"><span class="live-dot"></span> PLAYER 01 ONLINE <b>♥</b> PLAYER 02 ONLINE</div>
+        <a class="topbar-link" href="#levels">LEVEL SELECT <span>↗</span></a>
+      </header>
+
+      <main>
+        <section class="hero" id="home">
+          <div class="hero-photo" aria-hidden="true"></div>
+          <div class="hero-shade" aria-hidden="true"></div>
+          <div class="hero-vignette" aria-hidden="true"></div>
+          <div class="hero-orbit orbit-one" aria-hidden="true"></div>
+          <div class="hero-orbit orbit-two" aria-hidden="true"></div>
+          <div class="hero-hud hud-left"><span>MISSION 001</span><b>STEAL HIS HEART</b><small>STATUS: FOREVER ACTIVE</small></div>
+          <div class="hero-hud hud-right"><span>PLAYER PROFILE</span><b>DEV / LVL 31</b><small>CLASS: MY FAVOURITE HUMAN</small></div>
+          <div class="hero-content">
+            <p class="eyebrow hero-eyebrow"><span class="eyebrow-line"></span> 27 NOVEMBER 2026 <span class="eyebrow-line"></span></p>
+            <p class="hero-pretitle">THE MAIN CHARACTER HAS ENTERED THE GAME</p>
+            <h2 class="hero-title"><span>DEV</span><em>31</em></h2>
+            <p class="hero-subtitle">A love story with <em>no game over.</em></p>
+            <p class="hero-dedication">You loved me first. I chose you forever. Now let's play life together.</p>
+            <a class="gold-button" href="#levels"><span>▶ &nbsp; PLAY OUR STORY</span><b>↓</b></a>
+            <button class="song-button" id="play-song" type="button"><span class="song-play-icon">♫</span><span><small>OUR SOUNDTRACK</small><strong>Santhana Kaatre</strong></span><span class="song-button-note">PRESS PLAY ↗</span></button>
+          </div>
+          <div class="hero-bottom"><span>INSERT COIN? NAH. YOU ALREADY HAVE MY HEART.</span><span class="scroll-line"></span><span>SCROLL TO PLAY</span></div>
+          <div class="hero-index">01 <i>/</i> 05</div>
+          <div class="floating-prompt">✦ &nbsp; PLAYER 02 HAS CHOSEN YOU &nbsp; ✦</div>
+        </section>
+
+        <section class="intro section-wrap" id="intro">
+          <div class="movie-stamp reveal"><span>THE STORY SO FAR</span><b>EST. 2016</b><span>DIRECTED BY DESTINY</span></div>
+          <p class="eyebrow reveal">PRESS START TO REMEMBER <span>✦</span> OUR ORIGIN STORY</p>
+          <h2 class="section-heading reveal">You were the plot twist<br />I never saw coming.<br /><em>And my favourite ending.</em></h2>
+          <p class="section-copy reveal">You noticed me in 2016. You kept admiring me through the years. And on 7 January 2024, my heart finally understood what yours had known for so long. This is not just a love story. This is our co-op campaign.</p>
+          <div class="co-op-badges reveal"><span>♥ PLAYER 01: DEV</span><span>♥ PLAYER 02: SREE</span><span>∞ MODE: FOREVER</span></div>
+        </section>
+
+        <section class="levels-section section-wrap" id="levels">
+          <div class="section-heading-row reveal"><div><p class="eyebrow">SELECT YOUR LEVEL <span>✦</span> THE CAMPAIGN</p><h2 class="section-heading">Five levels.<br /><em>One forever.</em></h2></div><div class="level-count"><strong>05</strong><span>CHAPTERS<br />UNLOCKED</span></div></div>
+          <div class="level-grid">
+            <article class="level-card reveal"><div class="level-top"><span>LEVEL 01</span><span class="level-status">✓ CLEARED</span></div><div class="level-icon">◉</div><p class="level-year">2016</p><h3>THE FIRST GLANCE</h3><p>You saw me, and your story began. I had no idea I was already the leading lady in someone's heart.</p><div class="level-bottom"><span>MISSION: NOTICE HER</span><b>✦</b></div></article>
+            <article class="level-card reveal"><div class="level-top"><span>LEVEL 02</span><span class="level-status">✓ CLEARED</span></div><div class="level-icon">♡</div><p class="level-year">2016 — 2024</p><h3>THE LONG GAME</h3><p>Eight years of love and admiration. Even when the wait may have hurt, you stayed beside me through my ups and downs.</p><div class="level-bottom"><span>MISSION: DON'T GIVE UP</span><b>✦</b></div></article>
+            <article class="level-card level-special reveal"><div class="level-top"><span>LEVEL 03 · PLOT TWIST</span><span class="level-status">★ LEGENDARY</span></div><div class="level-icon">⚡</div><p class="level-year">07 JANUARY 2024</p><h3>THE HEART UPDATE</h3><p>One day, everything changed. I realised you were the one person I wanted beside me for all my tomorrows.</p><div class="level-bottom"><span>MISSION: SAY YES TO US</span><b>♥</b></div></article>
+            <article class="level-card reveal"><div class="level-top"><span>LEVEL 04</span><span class="level-status">✓ CLEARED</span></div><div class="level-icon">⚔</div><p class="level-year">2024</p><h3>THE BOSS BATTLE</h3><p>We fought for our love at home, faced the hard moments, and made our own love-cum-arranged marriage story.</p><div class="level-bottom"><span>MISSION: FIGHT FOR US</span><b>✦</b></div></article>
+            <article class="level-card level-wide reveal"><div class="level-top"><span>FINAL LEVEL · THE FOREVER UNLOCK</span><span class="level-status">♥ ACHIEVEMENT UNLOCKED</span></div><div class="final-level-content"><div><div class="level-icon">♛</div><p class="level-year">03 FEBRUARY 2025</p><h3>HUSBAND & WIFE MODE</h3><p>After all those years, I became your wife. The best part? We get to keep choosing each other, every single day.</p></div><div class="wedding-mini-photo"><img src="./src/assets/wedding-portrait.jpg" alt="Our wedding portrait" /></div></div><div class="level-bottom"><span>PLAYER 01 + PLAYER 02 · TEAM FOREVER</span><b>∞</b></div></article>
+          </div>
+        </section>
+
+        <section class="memory-section section-wrap" id="memories">
+          <div class="section-topline reveal"><div><p class="eyebrow">BONUS CONTENT <span>✦</span> BEHIND THE SCENES</p><h2 class="section-heading">Our favourite<br /><em>movie stills.</em></h2></div><span class="side-note">NO STUNTS. JUST REAL LOVE.</span></div>
+          <div class="memory-grid">
+            <figure class="memory-card memory-large reveal"><div class="photo-tag">SCENE 01 · THE WEDDING</div><img src="./src/assets/wedding-closeup.jpg" alt="A tender wedding-day moment together" /><figcaption><span>01</span><div><b>The way you look at me</b><small>My favourite frame. Every single time.</small></div></figcaption></figure>
+            <figure class="memory-card memory-small reveal"><div class="photo-tag">SCENE 02 · MISCHIEF</div><img src="./src/assets/cheek-kiss.jpg" alt="A playful cheek kiss on the wedding day" /><figcaption><span>02</span><div><b>Leading lady behaviour</b><small>Obviously, I had to steal a kiss.</small></div></figcaption></figure>
+            <figure class="memory-card memory-wide reveal"><div class="photo-tag">SCENE 03 · FOREVER STARTS</div><img src="./src/assets/sunset-silhouette.jpg" alt="Our silhouette together at sunset" /><figcaption><span>03</span><div><b>My favourite co-star</b><small>Every sunset is better with you.</small></div></figcaption></figure>
+          </div>
+        </section>
+
+        <section class="bonus-section section-wrap" id="bonus">
+          <div class="bonus-heading reveal"><p class="eyebrow">BONUS ROUND <span>✦</span> PLAYER 02 CHALLENGE</p><h2 class="section-heading">Collect 31 hearts.<br /><em>Unlock your surprise.</em></h2><p class="section-copy">A tiny birthday side quest. Tap each heart to collect it. Your reward? A message from your favourite person. No cheat codes allowed. 😌</p></div>
+          <div class="game-console reveal">
+            <div class="console-top"><span>DEV31 ARCADE</span><span>HIGH SCORE: FOREVER</span><span class="console-live"><i></i> LIVE</span></div>
+            <div class="score-row"><div><small>HEARTS COLLECTED</small><strong id="heart-count">00</strong><span>/ 31</span></div><div class="score-message" id="score-message">READY PLAYER ONE?</div></div>
+            <div class="progress-track"><div class="progress-fill" id="progress-fill"></div></div>
+            <div class="heart-grid" id="heart-grid" aria-label="Collect 31 hearts"></div>
+            <div class="console-bottom"><span>TIP: EVERY HEART IS A LITTLE PIECE OF MY LOVE.</span><button id="reset-hearts" type="button">↻ RESET GAME</button></div>
+            <div class="unlock-message" id="unlock-message" hidden><div class="unlock-spark">✦</div><p>ACHIEVEMENT UNLOCKED</p><h3>YOU WIN. I CHOOSE YOU. AGAIN.</h3><button id="claim-reward" type="button">CLAIM YOUR REWARD ♥</button></div>
+          </div>
+        </section>
+
+        <section class="letter-section section-wrap" id="letter">
+          <div class="letter-frame reveal">
+            <div class="letter-topline"><span>THE FINAL CUT</span><span>27 · 11 · 2026</span></div>
+            <div class="letter-star">✦</div>
+            <p class="eyebrow">A MESSAGE FROM YOUR CO-STAR</p>
+            <h2>Happy 31st Birthday,<br /><em>my hero.</em></h2>
+            <div class="letter-copy">
+              <p>My Dev,</p>
+              <p>In 2016, you looked at me and your heart chose me. For eight years, you kept admiring me with the same love, even when I wasn't ready to say yes. I may never know every feeling you carried through those years, or how much the waiting hurt sometimes. But I know this: through my ups and downs, you stood beside me.</p>
+              <p>And then came 7 January 2024 — the day something changed in me. I realised you were the one person I wanted for my forever. We fought for our love, faced the hard moments at home, and made our own love-cum-arranged marriage story. It wasn't the easiest level, but we cleared it together.</p>
+              <p>Now I get to call you my husband. I hope 31 brings you happiness, courage, good health, and all the beautiful things you deserve. Whatever the next level brings, remember: you don't have to play alone. I'm on your team — for every win, every difficult round, every silly moment, and every tomorrow.</p>
+              <p>Happy birthday, my favourite human. I love you more than all the lives in this game.</p>
+            </div>
+            <p class="letter-sign">Your girl, your wife, your forever co-op partner <span>♡</span></p>
+            <div class="letter-date">PLAYER 02 · SREE &nbsp; / &nbsp; 27 NOV 2026</div>
+            <div class="letter-sticker">♥ 1UP FOR LOVE ♥</div>
+          </div>
+        </section>
+      </main>
+
+      <div class="kiss-overlay" id="kiss-overlay" hidden role="dialog" aria-modal="true" aria-labelledby="kiss-title">
+        <div class="kiss-card" id="kiss-card">
+          <button class="kiss-close" id="close-kiss" type="button" aria-label="Close kiss reward">×</button>
+          <p class="eyebrow">BONUS REWARD UNLOCKED</p>
+          <div class="kiss-scene" aria-hidden="true">
+            <span class="kiss-heart kiss-heart-one">♥</span>
+            <span class="kiss-heart kiss-heart-two">♥</span>
+            <span class="kiss-spark kiss-spark-one">✦</span>
+            <span class="kiss-spark kiss-spark-two">✧</span>
+            <span class="kiss-lips">💋</span>
+            <span class="kiss-flying">😘</span>
+          </div>
+          <h2 id="kiss-title">KISS DELIVERED!</h2>
+          <p class="kiss-copy">One birthday kiss from your favourite girl.<br /><strong>Redeem unlimited real kisses from your wife. 😉</strong></p>
+          <button class="kiss-continue" id="kiss-continue" type="button">READ YOUR BIRTHDAY LETTER <span>♥</span></button>
+          <p class="kiss-footnote">PLAYER 02 → PLAYER 01 · NO EXPIRY DATE</p>
+        </div>
+      </div>
+
+      <div class="music-overlay" id="music-overlay" hidden role="dialog" aria-modal="true" aria-labelledby="music-title">
+        <div class="music-panel"><button class="music-close" id="close-song" type="button" aria-label="Close music player">×</button><p class="eyebrow">OUR OFFICIAL SOUNDTRACK</p><h2 id="music-title">Santhana Kaatre</h2><p class="music-subtitle">Thanikattu Raja · Ilaiyaraaja</p><div class="video-frame"><iframe id="song-frame" title="Santhana Kaatre official video song" src="" allow="autoplay; encrypted-media; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div><a class="music-fallback" href="https://www.youtube.com/watch?v=htgGQqD055Y" target="_blank" rel="noopener noreferrer">If the player doesn't load, watch the official video on YouTube ↗</a></div>
+      </div>
+      <div class="achievement-toast" id="achievement-toast" role="status" aria-live="polite"><span>🏆</span><div><b>ACHIEVEMENT UNLOCKED</b><small>YOU FOUND A LITTLE MORE LOVE</small></div></div>
+      <footer class="footer"><span>DEV31 · THE GAME OF LOVE</span><span>MADE WITH ♥ BY YOUR PLAYER 02</span><span>CONTINUE? ALWAYS.</span></footer>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
